@@ -8,7 +8,7 @@
 YUIのフォントCSSからフォント指定を削除したカスタマイズ版モジュール。
 
 #### 変数
-    $fxx (xxは10～24)
+    $fxxpx (xxは10～26)
 
 ### webfont-web-icon-fonts
 [Web Icon Fonts](http://webiconfonts.appspot.com/ "Web Icon Fonts | chibatch.jp")を使用する場合のモジュール。
