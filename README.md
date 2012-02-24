@@ -4,8 +4,14 @@
 
 ## SCSS Modules
 
+### font
+YUIのフォントCSSからフォント指定を削除したカスタマイズ版モジュール。
+
+#### 変数
+    $fxx (xxは10～24)
+
 ### webfont-web-icon-fonts
-[Web Icon Fonts](http://webiconfonts.appspot.com/ "Web Icon Fonts | chibatch.jp")を使用する場合のモジュール
+[Web Icon Fonts](http://webiconfonts.appspot.com/ "Web Icon Fonts | chibatch.jp")を使用する場合のモジュール。
 
 ### webfont-icomoon
 
@@ -20,10 +26,10 @@ data-icon要素に指定した文字を要素の子要素として追加する�
 
 #### 呼び出し
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.fonticon.js"></script>
-	<script type="text/javascript">$(document).ready(function() {
+    <script type="text/javascript" src="assets/js/jquery.fonticon.js"></script>
+    <script type="text/javascript">$(document).ready(function() {
         $('.icon').fonticon();
-	});</script>
+    });</script>
 
     <i class="icon" data-icon="i"></i>
 
@@ -33,10 +39,10 @@ data-icon要素に指定した文字を要素の子要素として追加する�
 #### 呼び出し
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.midflow.js"></script>
-	<script type="text/javascript">$(document).ready(function() {
+    <script type="text/javascript" src="assets/js/jquery.midflow.js"></script>
+    <script type="text/javascript">$(document).ready(function() {
         $('.nav').midflow({'fixed_class':'navfix'});
-	});</script>
+    });</script>
 
     <div class="nav">
         <ul>
@@ -47,3 +53,13 @@ data-icon要素に指定した文字を要素の子要素として追加する�
             <li><a href="#">menu5</a></li>
         </ul>
     </div>
+
+### browserdetect
+ブラウザ情報をHTMLタグのクラスに追加する
+
+#### 呼び出し
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.browserdetect.js"></script>
+    <script type="text/javascript">$(document).ready(function() {
+        $.browserdetect();
+    });</script>
