@@ -1,0 +1,19 @@
+/*!
+* WebIconFont FaceType Style for SCSS
+*
+* Font URL: http://webiconfonts.appspot.com/
+*/
+@import "webfont";
+
+@font-face{ 
+    font-family: 'WebIconFonts';
+    src: url($font_path + '/web-icon-fonts.eot');
+    src: url($font_path + '/web-icon-fonts.eot?#iefix') format('embedded-opentype'),
+         url($font_path + '/web-icon-fonts.woff') format('woff'),
+         url($font_path + '/web-icon-fonts.ttf') format('truetype'),
+         url($font_path + '/web-icon-fonts.svg#WebIconFonts') format('svg');
+}
+
+@mixin webiconfonts {
+    font-family: 'WebIconFonts';
+}

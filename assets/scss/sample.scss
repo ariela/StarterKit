@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+// Compassを読み込む
+@import "compass";
+
+// Webフォントアイコンを読み込む
+@import "webfont-icomoon";
+@import "webfont-icomoon-social";
+@import "webfont-web-icon-fonts";
+
+// アイコンの基本系を設定
+.icon {
+    font-size: 230%;
+    
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    @include inline-block();
+    
+    // アイコンの設定を行う
+    &.icomoon { @include icomoon(); }
+    &.icomoonsocial { @include icomoon-social(); }
+    &.webiconfonts { @include webiconfonts(); }
+}
+
+
+// ナビゲーション
+.nav {
+
+    // ナビゲーションサイズ（非追従時）
+    width: 960px;
+    height: 40px;
+    margin:  0 auto; // 中央寄せ
+    padding: 0;
+    
+    // 背景
+    background-color: #eee;
+    @include background(linear-gradient(#fefefe, #eee));
+
+    // ボーダー
+    border: 1px solid #e5e5e5;
+    @include border-radius(4px);
+    
+    ul {
+        margin:  0;
+        padding: 0;
+        @include clearfix();
+        
+        li {
+            margin:  0;
+            padding: 0;
+            list-style-type: none;
+            
+            // li要素左寄せ
+            float:left;
+            
+            a {
+                margin: 0;
+                padding: 0 12px;
+                line-height: 40px;
+                @include inline-block();
+                
+                border-left: 1px solid #f5f5f5;
+                border-right: 1px solid #e5e5e5;
+            }
+            
+            // liのclassがactiveの場合
+            &.active {
+                a {
+                    background-color: #E9E9E9;
+                    border-right-color: #DDD;
+                    border-left: 0;
+                    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.05));
+                }
+            }
+            
+        }
+    }
+
+    // 追従時の追加クラス
+    &.navfix {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        @include border-radius(0);
+        border-width: 0 0 1px 0;
+        @include box-shadow(inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1));
+        
+        ul {
+            // 非追従時の位置にulを配置
+            width: 960px;
+            margin: 0 auto;
+        }
+    }
+
+}

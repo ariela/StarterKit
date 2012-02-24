@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/*
+* IcoMoon FaceType Style for SCSS
+*
+" Base URL: http://www.99lime.com/
+* Font URL: http://keyamoon.com/icomoon/
+*/
+/*
+* Web Font Style for SCSS
+*/
+/** フォント設置位置のパス */
+@font-face {
+  font-family: 'IcoMoon';
+  src: url("../fonts/icomoon-webfont.eot");
+  src: url("../fonts/icomoon-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon-webfont.woff") format("woff"), url("../fonts/icomoon-webfont.ttf") format("truetype"), url("../fonts/icomoon-webfont.svg#IcoMoon") format("svg");
+}
+
+/*
+* IcoMoon Social FaceType Style for SCSS
+*
+" Base URL: http://www.99lime.com/
+* Font URL: http://keyamoon.com/icomoon/
+*/
+/*
+* Web Font Style for SCSS
+*/
+/** フォント設置位置のパス */
+@font-face {
+  font-family: 'IcoMoonSocial';
+  src: url("../fonts/icomoonsocial-webfont.eot");
+  src: url("../fonts/icomoonsocial-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoonsocial-webfont.woff") format("woff"), url("../fonts/icomoonsocial-webfont.ttf") format("truetype"), url("../fonts/icomoonsocial-webfont.svg#IcoMoonSocial") format("svg");
+}
+
+/*
+* WebIconFont FaceType Style for SCSS
+*
+* Font URL: http://webiconfonts.appspot.com/
+*/
+/*
+* Web Font Style for SCSS
+*/
+/** フォント設置位置のパス */
+@font-face {
+  font-family: 'WebIconFonts';
+  src: url("../fonts/web-icon-fonts.eot");
+  src: url("../fonts/web-icon-fonts.eot?#iefix") format("embedded-opentype"), url("../fonts/web-icon-fonts.woff") format("woff"), url("../fonts/web-icon-fonts.ttf") format("truetype"), url("../fonts/web-icon-fonts.svg#WebIconFonts") format("svg");
+}
+
+/* line 12, ../scss/sample.scss */
+.icon {
+  font-size: 230%;
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+}
+/* line 7, ../../../../../../ruby/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.icon {
+  *display: inline;
+}
+/* line 23, ../scss/sample.scss */
+.icon.icomoon {
+  font-family: 'IcoMoon';
+}
+/* line 24, ../scss/sample.scss */
+.icon.icomoonsocial {
+  font-family: 'IcoMoonSocial';
+}
+/* line 25, ../scss/sample.scss */
+.icon.webiconfonts {
+  font-family: 'WebIconFonts';
+}
+
+/* line 30, ../scss/sample.scss */
+.nav {
+  width: 960px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #eee;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #eeeeee));
+  background: -webkit-linear-gradient(#fefefe, #eeeeee);
+  background: -moz-linear-gradient(#fefefe, #eeeeee);
+  background: -o-linear-gradient(#fefefe, #eeeeee);
+  background: -ms-linear-gradient(#fefefe, #eeeeee);
+  background: linear-gradient(#fefefe, #eeeeee);
+  border: 1px solid #e5e5e5;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 46, ../scss/sample.scss */
+.nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 51, ../scss/sample.scss */
+.nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+}
+/* line 59, ../scss/sample.scss */
+.nav ul li a {
+  margin: 0;
+  padding: 0 12px;
+  line-height: 40px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  border-left: 1px solid #f5f5f5;
+  border-right: 1px solid #e5e5e5;
+}
+/* line 7, ../../../../../../ruby/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.nav ul li a {
+  *display: inline;
+}
+/* line 71, ../scss/sample.scss */
+.nav ul li.active a {
+  background-color: #E9E9E9;
+  border-right-color: #DDD;
+  border-left: 0;
+  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+/* line 83, ../scss/sample.scss */
+.nav.navfix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  border-width: 0 0 1px 0;
+  -moz-box-shadow: inset 0 1px 0 white, 0 1px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 0 white, 0 1px 5px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: inset 0 1px 0 white, 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 0 white, 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+/* line 93, ../scss/sample.scss */
+.nav.navfix ul {
+  width: 960px;
+  margin: 0 auto;
+}

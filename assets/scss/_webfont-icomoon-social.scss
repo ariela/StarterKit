@@ -1,0 +1,20 @@
+/*!
+* IcoMoon Social FaceType Style for SCSS
+*
+" Base URL: http://www.99lime.com/
+* Font URL: http://keyamoon.com/icomoon/
+*/
+@import "webfont";
+
+@font-face{ 
+    font-family: 'IcoMoonSocial';
+    src: url($font_path + '/icomoonsocial-webfont.eot');
+    src: url($font_path + '/icomoonsocial-webfont.eot?#iefix') format('embedded-opentype'),
+         url($font_path + '/icomoonsocial-webfont.woff') format('woff'),
+         url($font_path + '/icomoonsocial-webfont.ttf') format('truetype'),
+         url($font_path + '/icomoonsocial-webfont.svg#IcoMoonSocial') format('svg');
+}
+
+@mixin icomoon-social {
+    font-family: 'IcoMoonSocial';
+}

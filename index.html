@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <title>examples</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/sample.css" />
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fonticon.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.midflow.js"></script>
+
+    <script type="text/javascript">$(document).ready(function() {
+        $('.icon').fonticon();
+        $('.nav').midflow({'fixed_class': 'navfix'});
+    });</script>
+
+</head>
+<body>
+
+    <h1>Examples</h1>
+
+    <div class="nav">
+        <ul>
+            <li class="active"><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+            <li><a href="#">menu5</a></li>
+        </ul>
+    </div>
+
+
+    <section id="webfont-icon" style="padding-top: 40px;">
+        <h1>ico moon</h1>
+        <div class="set">
+            <p><i class="icon icomoon" data-icon="!"></i><br /><strong>Warning</strong><br /><kbd>!</kbd></div></p>
+            <p><i class="icon icomoon" data-icon="#"></i><br /><strong>Color</strong><br /><kbd>#</kbd></p>
+        </div>
+        <div class="set">
+            <p><i class="icon icomoonsocial" data-icon="a"></i><br /><strong>Amazon</strong><br /><kbd>!</kbd></div></p>
+        </div>
+        <div class="set">
+            <p><i class="icon webiconfonts" data-icon="!"></i><br /><strong>Back</strong><br /><kbd>!</kbd></div></p>
+        </div>
+    </section>
+
+</body>
+</html>
