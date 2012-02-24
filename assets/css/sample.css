@@ -1,5 +1,61 @@
 @charset "UTF-8";
 /*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+/*
+Fixed by Takeshi Kawamoto <yuki@transrain.net>
+*/
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ */
+/* line 14, ../scss/_font.scss */
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small;
+  /* for IE */
+  *font: x-small;
+  /* for IE in quirks mode */
+}
+
+/**
+ * Nudge down to get to 13px equivalent for these form elements
+ */
+/* line 26, ../scss/_font.scss */
+select,
+input,
+button,
+textarea {
+  font: 99% sans-serif;
+}
+
+/**
+ * To help tables remember to inherit
+ */
+/* line 33, ../scss/_font.scss */
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/**
+ * Bump up IE to get to 13px equivalent for these fixed-width elements
+ */
+/* line 45, ../scss/_font.scss */
+pre,
+code,
+kbd,
+samp,
+tt {
+  font-family: monospace;
+  *font-size: 108%;
+  line-height: 100%;
+}
+
+/*
 * IcoMoon FaceType Style for SCSS
 *
 " Base URL: http://www.99lime.com/
@@ -46,7 +102,7 @@
   src: url("../fonts/web-icon-fonts.eot?#iefix") format("embedded-opentype"), url("../fonts/web-icon-fonts.woff") format("woff"), url("../fonts/web-icon-fonts.ttf") format("truetype"), url("../fonts/web-icon-fonts.svg#WebIconFonts") format("svg");
 }
 
-/* line 12, ../scss/sample.scss */
+/* line 15, ../scss/sample.scss */
 .icon {
   font-size: 230%;
   text-decoration: none;
@@ -64,20 +120,20 @@
 .icon {
   *display: inline;
 }
-/* line 23, ../scss/sample.scss */
+/* line 26, ../scss/sample.scss */
 .icon.icomoon {
   font-family: 'IcoMoon';
 }
-/* line 24, ../scss/sample.scss */
+/* line 27, ../scss/sample.scss */
 .icon.icomoonsocial {
   font-family: 'IcoMoonSocial';
 }
-/* line 25, ../scss/sample.scss */
+/* line 28, ../scss/sample.scss */
 .icon.webiconfonts {
   font-family: 'WebIconFonts';
 }
 
-/* line 30, ../scss/sample.scss */
+/* line 33, ../scss/sample.scss */
 .nav {
   width: 960px;
   height: 40px;
@@ -98,21 +154,21 @@
   -khtml-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 46, ../scss/sample.scss */
+/* line 49, ../scss/sample.scss */
 .nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 51, ../scss/sample.scss */
+/* line 54, ../scss/sample.scss */
 .nav ul li {
   margin: 0;
   padding: 0;
   list-style-type: none;
   float: left;
 }
-/* line 59, ../scss/sample.scss */
+/* line 62, ../scss/sample.scss */
 .nav ul li a {
   margin: 0;
   padding: 0 12px;
@@ -129,7 +185,7 @@
 .nav ul li a {
   *display: inline;
 }
-/* line 71, ../scss/sample.scss */
+/* line 74, ../scss/sample.scss */
 .nav ul li.active a {
   background-color: #E9E9E9;
   border-right-color: #DDD;
@@ -139,7 +195,7 @@
   -o-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
 }
-/* line 83, ../scss/sample.scss */
+/* line 86, ../scss/sample.scss */
 .nav.navfix {
   position: fixed;
   top: 0;
@@ -158,7 +214,7 @@
   -o-box-shadow: inset 0 1px 0 white, 0 1px 5px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 0 white, 0 1px 5px rgba(0, 0, 0, 0.1);
 }
-/* line 93, ../scss/sample.scss */
+/* line 96, ../scss/sample.scss */
 .nav.navfix ul {
   width: 960px;
   margin: 0 auto;
